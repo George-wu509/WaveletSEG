@@ -1,4 +1,7 @@
 # WaveletSEG 
+
+INTRODUCTION
+-------------------------
 WaveletSEG is an automatic zebrafish embryo image processing analysis platform that can
 perform single nuclei to whole embryo scale quantification and topology and shape feature
 analysis of zebrafish embryos during embryonic development. WaveletSEG is an open-source
