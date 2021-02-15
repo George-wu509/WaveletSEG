@@ -105,6 +105,26 @@ close the menu.
  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
   ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/rotate.PNG)
   
+  DATA VISUALIZATION
+-------------------------
+1. The right-side window of WaveletSEG is the main data visualization window, where
+segmented nuclei positions are displayed as a 3D point cloud.
+2. In the left middle side of WaveletSEG main interface is the data visualization panel.
+3. Select specific channel and the segmentation method used from the dropdown menus.
+4. Choice the channel, embryo orientation or shape classification feature to display in The ‘Data
+visualization’ dropdown menu.
+5. Click ‘Show DV’ checkbox to mark the ventral and dorsal positions on data visualization
+window.
+6. Click the ‘no EVL’ checkbox to remove the EVL layer nuclei on data visualization window.
+7. Unclick the ‘Show whole embryo’ checkbox to display sub-regions of the whole embryo.
+8. Click ‘Save figure’ to save display figure. Click ‘Save result’ to save result in mat files.
+
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
+  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
+   ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
+
+
+  
   
  
  
