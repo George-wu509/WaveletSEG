@@ -1,7 +1,7 @@
 # WaveletSEG 
 We develop novel wavelet-based segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately. We incorporate wavelet based nuclei identification, image registration, 3D topology features, and shape classification in Zebrafish whole mount embryo in automatically analysis platform named WaveletSEG. Three sub GUI are also created for segmentation results validation and methods comparison.
 
- ![image](https://github.com/George-wu509/README_ref/software9.jpg)
+ ![image](https://github.com/George-wu509/README_ref/software9.png)
  
  
  
@@ -10,7 +10,7 @@ What is Wavelet Segmentation ?
 
 Wavelet-based segmentation is a novel nuclei segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately.  A wavelet is a mathematical function used to separate a function or continuous-time signal into different frequency components and study each component with a resolution that matches its scale. We develop a five steps pipeline including 2D continuous wavelet transform, multi-scale object identification, 3D object alignment, and division steps in YZ,XZ and ZY planes.  
 
- ![image](https://github.com/George-wu509/WaveletSEG/README_ref/software 0.jpg)
+ ![image](https://github.com/George-wu509/README_ref/software9.png)
 
 
 USER MANUAL
