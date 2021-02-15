@@ -1,24 +1,60 @@
 # WaveletSEG 
-A novel and concise algorithm for MS data peak detection and especially peak quantification by utilize 2-D Continuous Wavelet Transform (CWT) coefficients matrix information, which derived from applying CWT over MS raw data. No further baseline removal or peak smoothing preprocessing steps are required before peak detection.
+We develop novel wavelet-based segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately. We incorporate wavelet based nuclei identification, image registration, 3D topology features, and shape classification in Zebrafish whole mount embryo in automatically analysis platform named WaveletSEG. Three sub GUI are also created for segmentation results validation and methods comparison.
 
-
- ![image](https://github.com/George-wu509/Wavelet-MS-quantificatio-method/blob/master/readme_figures/cover1.jpeg)
+ ![image](https://github.com/George-wu509/WaveletSEG/README_ref/software 0.jpg)
  
- ![image](https://github.com/George-wu509/Wavelet-MS-quantificatio-method/blob/master/readme_figures/cover2.jpeg)
  
- Introduction
+What is Wavelet Segmentation ?
 -------------------------
-Peak detection and quantification of mass spectrometry (MS) data are essential and indispensable steps for MS based proteomic data analysis. In general, peak detection procedure can decompose into three consequent steps: smoothing, baseline correction and peak finding. Nevertheless, difficulties arise to detect true peaks for low Signal to Noise Ratio (SNR) and complexity of MS signals. Baseline removal and smoothing steps are unrecoverable after applied on MS data inadequately and results are inconsistent among common peak detection algorithms. 
 
-Most of the current methods for quantitative proteomics were based on isotope labeling combined with mass spectrometry or label-free quantification, such as peak quantification methods which applied directly curve fitting of MS raw data peaks by several different model functions. Due to increasing practicability in the proteomics field though high computational challenges label-free quantification techniques are, we present a novel and concise algorithm for MS data peak detection and especially peak quantification by utilize 2-D Continuous Wavelet Transform (CWT) coefficients matrix information, which derived from applying CWT over MS raw data. No further baseline removal or peak smoothing preprocessing steps are required before peak detection. 
+Wavelet-based segmentation is a novel nuclei segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately.  A wavelet is a mathematical function used to separate a function or continuous-time signal into different frequency components and study each component with a resolution that matches its scale. We develop a five steps pipeline including 2D continuous wavelet transform, multi-scale object identification, 3D object alignment, and division steps in YZ,XZ and ZY planes.  
 
-This algorithm improves the accuracy to detect true peaks in a robust manner by investigate the ridge lines on the CWT coefficients matrix respect to peak positions. Furthermore, peak quantification and resolution of overlapping peaks, which are crucial process when neighboring peaks overlap strongly enough, are presented in this approach by utilize specific scales CWT coefficients information. Our approach has been validated by using both simulated Gaussian overlapping MS data and physics-based computer model of mass spectrometry.
-  
- ![image](https://github.com/George-wu509/Wavelet-MS-quantificatio-method/blob/master/readme_figures/result1.png)
+ ![image](https://github.com/George-wu509/WaveletSEG/README_ref/software 0.jpg)
 
 
-Scientific justification
+USER MANUAL
 -------------------------
-Quantitative proteomics is increasingly developing in Bioinformatics research and not only protein identification, but also protein quantification is essential and indispensable to understand protein expression level or biological function. Most of the current methods for quantitative proteomics were based on isotope labeling combined with mass spectrometry or label-free quantification, such as peak quantification methods which applied directly curve fitting of MS raw data peaks by several different model functions. 
+You can either import image files or import existing result data file to check the result.
 
-Due to increasing practicability in the proteomics field though high computational challenges label-free quantification techniques are, we present a novel and concise algorithm for MS data peak detection and especially peak quantification by utilize 2-D Continuous Wavelet Transform (CWT) coefficients matrix information, which derived from applying CWT over MS raw data. This algorithm improves the accuracy to detect true peaks in a robust manner by investigate the ridge lines on the CWT coefficients matrix respect to peak positions. Furthermore, peak quantification and resolution of overlapping peaks, which are crucial process when neighboring peaks overlap strongly enough, are presented in this approach by utilize specific scales CWT coefficients information. 
+Import image files
+
+1. Push Setting button and input channel and resolution information.
+​2. Select single image file or folder using open file or open folder button
+​3. Once loading process is finished, you can run nuclei wavelet segmentation by pushing Nuclei identification.
+​4. Choice different segmentation methods or change parameters using parameter .
+5. You can running step-by-step nuclei identification, embryo orientation and shape classification steps or push     
+    RUN all to automatically run all processes.
+6. Rotate the embryo by using Rotation button
+7. Choice channel menu to visualize results such as pSmad distribution or nuclei density.
+8. Click the Show whole embryo checkbox and select xyz ranges to visualize partial embryo nuclei.
+9. Push Save figure button to store image visualization result as .fig file 
+10. Push save Result button to save results as WaveletSEG_result.mat file.
+11. All data, result and figures are stored in one folder. 
+
+Import existing result file
+
+​1. Push open file button and select sta.mat in specific folder.
+​2. Once loading process is finished, you can check image visualization results or run analysis process.
+​3. Choice different segmentation methods or change parameters using parameter .
+4. Choice channel menu to visualize results such as pSmad distribution or nuclei density.
+5. Click the Show whole embryo checkbox and select xyz ranges to visualize partial embryo nuclei.
+6. Push Save figure button to store image visualization result as .fig file 
+7. Push save Result button to save results as WaveletSEG_result.mat file.
+8. All data, result and figures are stored in one folder. 
+
+Using sub-GUI to validate results
+
+​1. There are three sub-GUI for segmentation data validation.
+​2. Push Raw images button to check the Z plane raw image with segmentation results.
+​3. Push Raw3D images button to check the raw image with segmentation results in 3D
+4. Push Compare SEG button to compare different segmentation results.
+
+Synthesis images and add noise
+
+​1. After pushing Generate image button, a pop-up menu will display. 
+​2. You can input synthesis image 3D size, nuclei number, size and density. 
+​3. Then apply different type of noise on synthesis images by pushing add noise button on pop-up menu.
+
+
+
+
