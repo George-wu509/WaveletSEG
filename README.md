@@ -1,7 +1,7 @@
 # WaveletSEG 
 We develop novel wavelet-based segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately. We incorporate wavelet based nuclei identification, image registration, 3D topology features, and shape classification in Zebrafish whole mount embryo in automatically analysis platform named WaveletSEG. Three sub GUI are also created for segmentation results validation and methods comparison.
 
- ![image]("https://github.com/George-wu509/README_ref/software 0.jpg")
+ ![image]("https://github.com/George-wu509/README_ref/software9.jpg")
  
  
  
