@@ -1,6 +1,4 @@
 # WaveletSEG 
-
-Introduction
 -------------------------
 WaveletSEG is an automatic zebrafish embryo image processing analysis platform that can
 perform single nuclei to whole embryo scale quantification and topology and shape feature
@@ -125,8 +123,10 @@ window.
 8. Click ‘Save figure’ to save display figure. Click ‘Save result’ to save result in mat files.
 
  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software9.png)
-  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_c.png)
-   ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/rawimageZ.PNG)
+ 
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_c.png)
+ 
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/rawimageZ.PNG)
 
 
   
