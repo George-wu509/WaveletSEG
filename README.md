@@ -23,8 +23,6 @@ USER MANUAL
 -------------------------
 You can either import image files or import existing result data file to check the result.
 
- ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_a.png)
-
 
 **Channel information setting**
 
@@ -37,11 +35,9 @@ empty boxes.
 values of Z-stack) in ‘Z-stack range’ and the four-element vector(min and max axis limits of
 x axis, min and max axis limits of y axis) in ‘XY plane range’. Zero value means full range.
 
-
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set1_channel.png)
 
 **Import image files**
-
- ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set1_channel.png)
  
 1. Push Setting button and input channel and resolution information.
 ​2. Select single image file or folder using open file or open folder button
@@ -56,7 +52,7 @@ x axis, min and max axis limits of y axis) in ‘XY plane range’. Zero value m
 10. Push save Result button to save results as WaveletSEG_result.mat file.
 11. All data, result and figures are stored in one folder. 
 
-Import existing result file
+**Import existing result file**
 
 ​1. Push open file button and select sta.mat in specific folder.
 ​2. Once loading process is finished, you can check image visualization results or run analysis process.
@@ -67,21 +63,55 @@ Import existing result file
 7. Push save Result button to save results as WaveletSEG_result.mat file.
 8. All data, result and figures are stored in one folder. 
 
-Using sub-GUI to validate results
+**Using sub-GUI to validate results**
 
 ​1. There are three sub-GUI for segmentation data validation.
 ​2. Push Raw images button to check the Z plane raw image with segmentation results.
 ​3. Push Raw3D images button to check the raw image with segmentation results in 3D
 4. Push Compare SEG button to compare different segmentation results.
 
-Synthesis images and add noise
+**Synthesis images and add noise**
 
 ​1. After pushing Generate image button, a pop-up menu will display. 
 ​2. You can input synthesis image 3D size, nuclei number, size and density. 
 ​3. Then apply different type of noise on synthesis images by pushing add noise button on pop-up menu.
 
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/synthesis_noisy_GUI.png)
+ 
+ 
+**Select Segmentation method**
 
-Synthesis images and add noise
+1. Before running the segmentation step, click ‘Method’ button in WaveletSEG and to open the
+‘Segmentation method setting’ menu. This step is required before the ‘Nuclei identification’
+step.
+2. Select the segmentation methods by clicking the checkboxs before the four methods
+including Point-wise method, wavelet method, Threshold(Otsu) method, and DS method.
+Multiple selections accepted.
+3. Input the parameter values for segmentation method you selected.
+4. Click the ‘X’ and leave this menu.
+
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/gau_high.png)
+ 
+ **Embryo axis 3D rotation**
+ 
+ 1. Click the ‘Rotation’ button in WaveletSEG to open ‘Embryo 3D rotation’ menu.
+2. Input the clockwise rotation angle (unit: degree) about the axis. Example: Input ‘30’ in Z axis
+clockwise rotation degree means clockwise rotate 30 degree on XY plane.
+3. Click the ‘Rotate’ button in ‘Embryo 3D rotation’ menu to rotate the nuclei 3D points and
+close the menu.
+4. Click ‘Set default’ button to recovery nuclei 3D point positions into un-rotated positions.
+5. Please re-run ‘2. RUN Embryo orientation’ step after the rotation step.
+
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
+  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/rotate.PNG)
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
