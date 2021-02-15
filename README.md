@@ -17,8 +17,6 @@ What is Wavelet Segmentation ?
 
 Wavelet-based segmentation is a novel nuclei segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately.  A wavelet is a mathematical function used to separate a function or continuous-time signal into different frequency components and study each component with a resolution that matches its scale. We develop a five steps pipeline including 2D continuous wavelet transform, multi-scale object identification, 3D object alignment, and division steps in YZ,XZ and ZY planes.  
 
- ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_b.png)
-
 
 USER MANUAL
 -------------------------
@@ -27,7 +25,7 @@ You can either import image files or import existing result data file to check t
  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_a.png)
 
 
-Channel information setting
+**Channel information setting**
 
 1. Before importing an image file, click the ‘Setting’ button in the WaveletSEG main interface
 and input channel information and resolution values in ‘Channel parameter setting’ menu.
@@ -40,7 +38,7 @@ x axis, min and max axis limits of y axis) in ‘XY plane range’. Zero value m
 
 
 
-Import image files
+**Import image files**
 
  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set1_channel.png)
  
