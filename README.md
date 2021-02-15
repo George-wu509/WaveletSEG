@@ -18,6 +18,8 @@ What is Wavelet Segmentation ?
 Wavelet-based segmentation is a novel nuclei segmentation algorithm which can do robust nuclei segmentation or single-molecule RNA segmentation without any prepossessing or thresholding steps, and separate overlapping cells accurately.  A wavelet is a mathematical function used to separate a function or continuous-time signal into different frequency components and study each component with a resolution that matches its scale. We develop a five steps pipeline including 2D continuous wavelet transform, multi-scale object identification, 3D object alignment, and division steps in YZ,XZ and ZY planes.  
 
  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_b.png)
+ 
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1.png)
 
 USER MANUAL
 -------------------------
@@ -119,9 +121,9 @@ window.
 7. Unclick the ‘Show whole embryo’ checkbox to display sub-regions of the whole embryo.
 8. Click ‘Save figure’ to save display figure. Click ‘Save result’ to save result in mat files.
 
- ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
-  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
-   ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/set4_rotation.png)
+ ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software9.png)
+  ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/software1_c.png)
+   ![image](https://github.com/George-wu509/WaveletSEG/blob/main/README_ref/rawimageZ.PNG)
 
 
   
