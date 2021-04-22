@@ -57,6 +57,9 @@ x axis, min and max axis limits of y axis) in ‘XY plane range’. Zero value m
 10. Push save Result button to save results as WaveletSEG_result.mat file.
 11. All data, result and figures are stored in one folder. 
 
+You can get example images from this link
+https://www.dropbox.com/sh/h7mrnm1g6qjtzbk/AACjFtAZN-pTcLBcXodOGhn4a?dl=0
+
 **Import existing result file**
 
 ​1. Push open file button and select sta.mat in specific folder.
